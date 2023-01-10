@@ -27,12 +27,20 @@
     position: relative;
     left: 55vw;
 }
+
 #notify {
     position: relative;
     top: 13px
 }
-.chatmessages{
+
+.chatmessages {
     width: 50%;
     position: relative;
     left: 25vw;
+}
+
+.msgForm {
+    /* width: 50%; */
+    position: absolute;
+    top: 18vh;
 }
