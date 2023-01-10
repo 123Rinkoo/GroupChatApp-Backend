@@ -2,6 +2,10 @@ const User = require('../model/user');
 const bcrypt = require('bcrypt');
 const jwt=require('jsonwebtoken');
 
+function generateAccessToken(id, name){
+    return jwt.sign({userId: id, userName: name}, '68A5894284FC367036BAFCD05E307098F1D1091DF46927863A0DD72C3366DE9B');
+}
+
 exports.signingUp = (req, res, next) => {
     User.findAll()
         .then(users => {

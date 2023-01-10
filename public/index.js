@@ -65,6 +65,19 @@ function addingUser(event) {
     .catch(err => errorInLoginSignUp(err.response.data.message));
 }
 
+function logInUser(event) {
+  event.preventDefault();
+  const email = event.target.email.value;
+  const password = document.getElementById('passy').value;
+
+  axios.post('http://localhost:4000/user/login', { key1: email, key2: password })
+    .then((result) => {
+      localStorage.setItem('token', result.data.token);
+      SuccesfullLoginUp(result.data);
+    })
+    .catch(err => errorInLoginSignUp(err.response.data.message));
+}
+
 function closingSigningform() {
 
     const id1 = document.getElementById('closeform');
@@ -73,15 +86,15 @@ function closingSigningform() {
 
 function SuccesfullLoginUp(data) {
     alert(`${data.message}`);
-    if (data.found.ispremiumuser == true) {
-        window.location.href = 'premium.html';
-    }
-    else {
-        window.location.href = 'expense.html';
-    }
+    // if (data.found.ispremiumuser == true) {
+    //     window.location.href = 'premium.html';
+    // }
+    // else {
+        window.location.href = 'chat.html';
+    // }
 }
 function SuccesfullSignUp(message) {
-    alert(`${message}`);
+    alert(`${message}`); 
     window.location.href = 'index.html';
 }
 

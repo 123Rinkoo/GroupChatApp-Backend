@@ -31,3 +31,8 @@
     position: relative;
     top: 13px
 }
+.chatmessages{
+    width: 50%;
+    position: relative;
+    left: 25vw;
+}
