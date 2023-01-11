@@ -10,6 +10,7 @@ const Message= sequelize.define('message', {
         primaryKey: true
     },
     Message: Sequelize.STRING,
+    UserName: Sequelize.STRING
 
 });
 module.exports=Message;

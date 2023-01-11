@@ -39,8 +39,14 @@
     left: 25vw;
 }
 
+.chatmessages2 {
+    width: 50%;
+    position: relative;
+    left: 25vw;
+}
+
 .msgForm {
-    /* width: 50%; */
-    position: absolute;
-    top: 18vh;
+    border: 2px solid green;
+    padding: 0 26px;
+    background-color: aliceblue;
 }
