@@ -9,7 +9,7 @@ exports.sendmessage=(req,res,next)=>{
 }; 
 
 exports.getmessage=(req, res, next)=>{
-    console.log('its coming');
+    // console.log('its coming');
     Message.findAll()
     .then(messages=>res.json(messages))
     .catch(err=>console.log(err));

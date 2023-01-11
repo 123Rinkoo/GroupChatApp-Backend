@@ -4,12 +4,20 @@ window.onload = function () {
         .catch(err => console.log(err));
 }
 
+setInterval(() => {
+    axios.get('http://localhost:4000/getmessage')
+        .then(messages => ShowingMessage(messages.data))
+        .catch(err => console.log(err));
+}, 1000);
+
 // setInterval(() => {
 //     window.location.href = 'chat.html'
 // }, 1000);
 
 function ShowingMessage(messages) {
     id1 = document.getElementById('chatmessages');
+    id1.innerHTML="";
+    
   for(i=0; i<messages.length; i++)
   {
       id2 = `<div class="cm">
