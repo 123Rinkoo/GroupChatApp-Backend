@@ -86,12 +86,7 @@ function closingSigningform() {
 
 function SuccesfullLoginUp(data) {
     alert(`${data.message}`);
-    // if (data.found.ispremiumuser == true) {
-    //     window.location.href = 'premium.html';
-    // }
-    // else {
         window.location.href = 'chat.html';
-    // }
 }
 function SuccesfullSignUp(message) {
     alert(`${message}`); 

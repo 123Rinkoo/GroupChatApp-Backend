@@ -4,6 +4,11 @@
     left: 20px;
 }
 
+#addmember{
+    position: absolute;
+    top: 7px;
+    left: 25vw;
+}
 .modal-body form {
     padding: 21px;
     border: 2px solid rgba(0, 0, 0, 0.5);
@@ -25,7 +30,18 @@
 
 .loginSignUpButton {
     position: relative;
-    left: 55vw;
+    left: 69vw;
+}
+
+#Groupform {
+    /* position: relative;
+    right: 38vw;
+    top: 9vh; */
+    position: relative;
+    top: 9vh;
+    left: 16vw;
+    height: 78px;
+    width: 28vw;
 }
 
 #notify {
@@ -35,11 +51,14 @@
 
 .chatmessages {
     width: 50%;
-    position: relative;
+    position: fixed;
     left: 25vw;
     /* top: 12vh; */
     bottom: 17vh;
     background-color: white;
+
+    overflow-y: scroll;
+    height: 74%;
 }
 
 .chatmessages2 {
@@ -58,4 +77,15 @@
     border: 2px solid green;
     padding: 0 26px;
     background-color: aliceblue;
+}
+
+.badge{
+    width: 196px;
+}
+
+#Yourgroups{
+    position: relative;
+    top: 20vh;
+    left: 30vw;
+    width: 38%;
 }
